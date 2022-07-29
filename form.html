@@ -35,9 +35,9 @@
         <input type="date" name="start_date" min="2022-01-01">
         <h3>Priority:</h3>
         <p>
-          <input type="radio" name="color" value="radio"> Green
-          <input type="radio" name="color" value="radio"> Yellow
-          <input type="radio" name="color" value="radio"> Red
+          <input type="radio" name="color" value="green"> Green </input>
+          <input type="radio" name="color" value="yellow"> Yellow </input>
+          <input type="radio" name="color" value="red"> Red </input>
         </p>
         <h3>Status:</h3>
         <select id="select" name="select">
@@ -52,8 +52,16 @@
         </form>
          <div id="tasksContainer">
           <table id="table">
-            <thead></thead>
-            <tbody id="tbody"></tbody>
+            <thead id="thead">
+              <tr id="gg">
+                <th>Title</th>
+                <th>description</th>
+                <th>Priority</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
           </table>
          </div>
         </div>
