@@ -3,6 +3,8 @@ const dateNumber = document.getElementById('dateNumber');
 const dateText = document.getElementById('dateText');
 const dateMonth = document.getElementById('dateMonth');
 const dateYear = document.getElementById('dateYear');
+let tbody = "";
+let t_body = document.getElementById('tbody');
 
 // Tasks Container
 const tasksContainer = document.getElementById('tasksContainer');
@@ -20,20 +22,20 @@ const addNewTask = event => {
     const title = event.target.title.value;
     const des = event.target.description.value;
     const priority = event.target.color.value;
-    const sel = event.target.select.value;
-    console.log(title);
-    console.log(des);
-    console.log(priority);
-    console.log(sel);
+    //const sel = event.target.select.value;
+    const select = document.getElementById('select');
+    const sel = select.options[select.selectedIndex].text;
     if (!title) return;
     if (!des) return;
     if (!priority) return;
     if (!sel) return;
+    tbody = tbody + '<tr><td>' + title + '</td><td>' + des + '</td><td>' + priority + '</td><td>' + sel + '</td></tr>';
+    t_body.innerHTML = tbody;
     const task = document.createElement('form');
     task.classList.add('task', 'roundBorder');
     task.addEventListener('click', changeTaskState);
-    task.textContent = "Title:" + title + "Description:" + des + "Priority:" + priority + "Status:" + sel;
-    tasksContainer.prepend(task);
+    task.tbody = tbody;
+    tbody.prepend(task);
     event.target.reset();
 };
 
