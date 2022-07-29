@@ -1,0 +1,81 @@
+:root {
+    --primary: #2471A3;
+    --secondary: #626567;
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e7e7e7;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+body {
+    background-color: var(--diabled);
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 200%;
+    max-width: 500px;
+}
+
+div,
+#box {
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #FEF5E7;
+    ;
+    width: auto;
+    max-width: 300px;
+
+}
+
+.information {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+textarea {
+    height: 50px;
+    width: 100%;
+    resize: none;
+}
+
+
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    background-color: var(--diabled);
+    text-align: center;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+#box,
+form {
+    background-color: #FEF5E7;
+    border-radius: 30px 30px 30px 30px;
+}
+
+textarea {
+    background-color: #F8F9F9;
+}
