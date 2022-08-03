@@ -10,7 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap"
     />
     <link rel="stylesheet" href="styles_task.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="script_form.js" type="text/javascript" defer></script>
+    
   </head>
   <body background="imagen.jpg">
     <div id="box">
@@ -19,12 +21,9 @@
         <div class="information">
         <h3 id="title">Title: </h3>
         <p><input type="text" id="title" name="title" size="30" maxlength="100"></p> 
-        <h3>Create by:</h3>
-        <select id="select2">
-          <option value="value1">1</option>
-          <option value="value2" selected>2</option>
-          <option value="value3">3</option>
-          <option value="value3">4</option>
+        <h3>Created by:</h3>
+        <select id="created">
+          
         </select>
         </p>
         <h3>Description:</h3>
@@ -50,22 +49,13 @@
           <p></p>
           <button id="button" type="submit" class="addTaskButton">+</button>
         </form>
-         <div id="tasksContainer">
-          <table id="table">
-            <thead id="thead">
-              <tr id="gg">
-                <th>Title</th>
-                <th>description</th>
-                <th>Priority</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody id="tbody">
-            </tbody>
-          </table>
-         </div>
+        
         </div>
       </form>
+      <div id="tasksContainer">
+        <table id="tasks">        
+        </table>
+      </div>
     </div>
   </body>
 </html>
