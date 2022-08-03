@@ -1,6 +1,3 @@
-//import axios from "axios";
-//const axios = require("axios");
-
 window.onload = function () {
   //fetchTasks();
   getTaskList();
