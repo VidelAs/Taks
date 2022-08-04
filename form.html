@@ -29,9 +29,9 @@
         <h3>Description:</h3>
         <textarea  name="description" class="description" rows="5" cols="24" placeholder="Description..." maxlength="180"></textarea>
         <h3>Start date: </h3>
-        <input type="date" name="start_date" min="2022-01-01">
+        <input id="start_date" type="date" name="start_date" min="2022-01-01">
         <h3>Final date: </h3>
-        <input type="date" name="start_date" min="2022-01-01">
+        <input id="final_date" type="date" name="final_date" min="2022-01-01">
         <h3>Priority:</h3>
         <p>
           <input type="radio" name="color" value="green"> Green </input>
@@ -52,10 +52,12 @@
         
         </div>
       </form>
-      <div id="tasksContainer">
-        <table id="tasks">        
-        </table>
       </div>
-    </div>
+      <div id="box">
+        <div id="tasksContainer">
+          <table id="tasks">        
+          </table>
+        </div>
+     </div>
   </body>
 </html>
